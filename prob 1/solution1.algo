@@ -1,0 +1,23 @@
+ALGORITHM algorithm_name
+VAR
+set1, set2: array_of_INTEGER;
+sum,a,b:INTEGER
+BEGIN
+    sum=0
+    FOR a FROM 0 TO set1.length - 1 STEP step 1 DO
+    FOR b FROM 0 TO set2 - 1 STEP step 1  DO
+    IF (set[a]<>set[b]) THEN
+       sum = sum + set[a]
+    END_IF
+    END_FOR
+    END_FOR
+    FOR a FROM 0 TO set1.length - 1 STEP step 1 DO
+    FOR b FROM 0 TO set2 - 1 STEP step 1  DO
+    IF (set[b]<>set[a]) THEN
+       sum = sum + set[b]
+    END_IF
+    END_FOR
+    END_FOR
+
+
+END

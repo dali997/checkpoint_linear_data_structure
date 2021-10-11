@@ -1,0 +1,19 @@
+ALGORITHM solution2
+VAR
+set1 : HASH_TABLE<INTEGER,INTEGER>;
+set2 : HASH_TABLE<INTEGER,INTEGER>;
+sum, a : INTEGER;
+
+BEGIN
+    sum = 0 
+    FOR a FROM 0 TO set1.length - 1 STEP step 1  DO
+    IF (set2.lookup(set1[a]= TRUE )) THEN
+        sum = sum set1[a]
+    END_IF
+    END_FOR
+        FOR a FROM 0 TO set2.length - 1 STEP step 1  DO
+    IF (set2.lookup(set2[a]= TRUE   )) THEN
+        sum = sum set2[a]
+    END_IF
+    END_FOR
+END
